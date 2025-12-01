@@ -1,15 +1,43 @@
 # Whatever i want to write down and have to paste somewhere else
 
+# Unity thingy 
+Unity shortcuts reference
+
+Scene view navigation:
+- View: Hold the right mouse button and drag.
+- Frame: Press F in the Scene view or double-click a GameObject in the Hierarchy window.
+- Orbit:  Hold Alt (macOS: hold Option) and left mouse button drag.
+- Zoom: Scroll wheel or hold Alt (macOS: hold Option) and right mouse button drag.
+- Flythrough mode: Hold the right mouse button and use the WASD keys (as well as the Q and E keys to move Down and Up).
+
+Scene view tools shortcuts:
+- View: Q
+- Move: W
+- Rotate: E
+- Scale: R
+- Rect: T
+- Transform: Y
+
+Miscellaneous shortcuts:
+- Undo: Ctrl+Z (macOS: Cmd+Z)
+- Save: Ctrl+S (macOS: Cmd+S)
+
+
+## Character Controller Unity
+Instead of Rigidbody on Player Character
 
 ## Playmode Tint 
 Edit -> Preferences -> Colors -> Playmode Tint
 
-# Vertex Snapping 
+## Vertex Snapping 
 Moves an object by a vertex (likely a corner) and snap it to another vertex of another object
 
-#Duplicate GameObject
+## Duplicate GameObject
 Strg + D
 
+## IsTrigger
+GameObject acts like a 'cloud'
+- Collider Component with IsTrigger acts as a trigger instead of a physical collider - will no longer have a solid barrier - but can still detect entry by the player or another GameObject
 
 
 # Sound
@@ -33,6 +61,9 @@ Using statements link the Script to the necessary libraries
 
 Monobehaviour is a required class for all GameObjects in Unity.
 - This bit of code is what allows you to add your script as a component to a GameObject.
+
+
+
 
 
 ## Functions in Unity 
