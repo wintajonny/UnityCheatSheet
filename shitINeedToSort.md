@@ -1,60 +1,14 @@
 # Whatever i want to write down and have to paste somewhere else
 
-# Unity thingy 
-Unity shortcuts reference
-
-Scene view navigation:
-- View: Hold the right mouse button and drag.
-- Frame: Press F in the Scene view or double-click a GameObject in the Hierarchy window.
-- Orbit:  Hold Alt (macOS: hold Option) and left mouse button drag.
-- Zoom: Scroll wheel or hold Alt (macOS: hold Option) and right mouse button drag.
-- Flythrough mode: Hold the right mouse button and use the WASD keys (as well as the Q and E keys to move Down and Up).
-
-Scene view tools shortcuts:
-- View: Q
-- Move: W
-- Rotate: E
-- Scale: R
-- Rect: T
-- Transform: Y
-
-Miscellaneous shortcuts:
-- Undo: Ctrl+Z (macOS: Cmd+Z)
-- Save: Ctrl+S (macOS: Cmd+S)
-
-
 ## Character Controller Unity
 Instead of Rigidbody on Player Character
-
-## Playmode Tint 
-Edit -> Preferences -> Colors -> Playmode Tint
-
-## Vertex Snapping 
-Moves an object by a vertex (likely a corner) and snap it to another vertex of another object
-
-## Duplicate GameObject
-Strg + D
 
 ## IsTrigger
 GameObject acts like a 'cloud'
 - Collider Component with IsTrigger acts as a trigger instead of a physical collider - will no longer have a solid barrier - but can still detect entry by the player or another GameObject
 
 
-# Sound
-Player needs an Audio Listener component to hear sounds
-ONLY ONE allowed in Unity
-
-## Audio Source 
-Audio Resource contains the wanted audio
-Loop if wanted
-For 3D sound (where it varies Volume by distance) Spatial Blend = 1
-GameObject Audio Source for Background Music
-(Search for Music with CC0 or CC-NC licences (or https://commons.wikimedia.org/wiki/Category:Audio_files)
-Preverb Zones are used to "reflect and reverberate" Sound in physical space
-
-
 #Programming
-Scripts are like components
 Public variables are changeable in the Inspector Window of Unity
 Using statements link the Script to the necessary libraries
 - so when you enter something like 'Rigidbody' the script knows what that means
