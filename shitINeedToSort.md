@@ -1,5 +1,10 @@
 # Whatever i want to write down and have to paste somewhere else
 
+
+## ShortCuts
+in Hierarchy Window:
+### F2 - Rename
+
 ## Character Controller Unity
 Instead of Rigidbody on Player Character
 
@@ -18,6 +23,20 @@ Monobehaviour is a required class for all GameObjects in Unity.
 
 
 
+## Snapping 
+with Ctrl - Moves on the Grid
+
+# Deleting a GameObject
+Destroy(gameObject)
+
+# Instantiating
+means creating a copy of an object during runtime
+
+        Instantiate(prefab /*onCollectEffect*/ , transform.position, transform.rotation);
+
+# Visual Effects (VFX)
+You can use __Particle Systems__ to simulate complex visual effects. (e.g. Fire, smoke, bursts of sparks)
+
 
 
 ## Functions in Unity 
@@ -25,7 +44,36 @@ Monobehaviour is a required class for all GameObjects in Unity.
 Executes exactly once at the beginning of the game
 #### Update 
 Runs once per Frame
+### OnTriggerEnter
+Runs when a GameObject with a Rigidbody component collides with another (that has isTrigger?)
+
 
 ## Scripts Provided By Unity
+using UnityEngine;
+
+### DoorOpener with animation    
+    public class DoorOpener : MonoBehaviour
+    {
+       private Animator doorAnimator;
+    
+       void Start()
+       {
+           // Get the Animator component attached to the same GameObject as this script
+           doorAnimator = GetComponent<Animator>();
+       }
+    
+       private void OnTriggerEnter(Collider other)
+       {
+           // Check if the object entering the trigger is the player (or another specified object)
+           if (other.CompareTag("Player")) // Make sure the player GameObject has the tag "Player"
+           {
+               if (doorAnimator != null)
+               {
+                   // Trigger the Door_Open animation
+                   doorAnimator.SetTrigger("Door_Open");
+               }
+           }
+       }
+    }
 
 
