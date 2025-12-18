@@ -77,3 +77,28 @@ using UnityEngine;
     }
 
 
+
+
+# 2D Development
+Use the 2D Button at the top-rigth of the Scene View for optimized 2D Development.
+
+3D Models are "called" __2D Sprites__
+Gracity Scale 0 -> makes the player stay on Screen and not fall through the bottom
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
