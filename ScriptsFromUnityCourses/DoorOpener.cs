@@ -1,4 +1,5 @@
 using UnityEngine;
+
 public class DoorOpener : MonoBehaviour
 {
    private Animator doorAnimator;
